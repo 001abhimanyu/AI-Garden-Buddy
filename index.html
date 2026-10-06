@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Garden Buddy</title>
+
+    <meta
+        name="description"
+        content="AI Garden Buddy helps you create a personalized garden plan and spend more time outdoors."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span>AI</span> Garden Buddy
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#planner">Garden Planner</a>
+            <a href="#mission">Outdoor Mission</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                Open-Source AI Garden Planner
+            </div>
+
+            <h1>
+                Plan with AI.<br>
+                <span>Grow in the real world.</span>
+            </h1>
+
+            <p>
+                AI Garden Buddy creates a personalized gardening plan
+                based on your garden, sunlight, season and experience.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#planner" class="primary-btn">
+                    Start Gardening
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Learn More
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-garden">
+            <div class="sun"></div>
+
+            <div class="garden-card">
+                <div class="plant-icon">🌱</div>
+
+                <h3>Today's Garden Goal</h3>
+
+                <p>
+                    Plant something new and spend
+                    20 minutes outside.
+                </p>
+
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <small>20 minute outdoor mission</small>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+    <section class="how-section">
+
+        <div class="section-heading">
+            <span>HOW IT WORKS</span>
+            <h2>From AI plan to outdoor action</h2>
+            <p>
+                The screen is only the starting point.
+                Your real destination is the garden.
+            </p>
+        </div>
+
+        <div class="steps">
+
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <h3>Tell Us About Your Garden</h3>
+                <p>
+                    Enter your location, garden size,
+                    sunlight and experience.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <h3>Get Your AI Plan</h3>
+                <p>
+                    AI creates personalized plant
+                    recommendations and tasks.
+                </p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <h3>Touch Grass</h3>
+                <p>
+                    Put your phone down and complete
+                    your outdoor gardening mission.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Garden Planner -->
+    <section id="planner" class="planner-section">
+
+        <div class="section-heading">
+            <span>AI GARDEN PLANNER</span>
+
+            <h2>Create Your Garden Plan</h2>
+
+            <p>
+                Tell AI about your garden and discover
+                what you can grow.
+            </p>
+        </div>
+
+
+        <div class="planner-container">
+
+            <!-- Form -->
+            <div class="planner-form">
+
+                <h3>Your Garden</h3>
+
+                <form id="gardenForm">
+
+                    <div class="form-group">
+                        <label for="location">
+                            Location
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            placeholder="Example: Kanpur, India"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="season">
+                                Season
+                            </label>
+
+                            <select id="season">
+
+                                <option value="spring">
+                                    Spring
+                                </option>
+
+                                <option value="summer">
+                                    Summer
+                                </option>
+
+                                <option value="monsoon">
+                                    Monsoon
+                                </option>
+
+                                <option value="autumn">
+                                    Autumn
+                                </option>
+
+                                <option value="winter">
+                                    Winter
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="sunlight">
+                                Sunlight
+                            </label>
+
+                            <select id="sunlight">
+
+                                <option value="full">
+                                    Full Sun
+                                </option>
+
+                                <option value="partial">
+                                    Partial Sun
+                                </option>
+
+                                <option value="shade">
+                                    Mostly Shade
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="space">
+                                Garden Space
+                            </label>
+
+                            <select id="space">
+
+                                <option value="small">
+                                    Small / Balcony
+                                </option>
+
+                                <option value="medium">
+                                    Medium Garden
+                                </option>
+
+                                <option value="large">
+                                    Large Garden
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="experience">
+                                Experience
+                            </label>
+
+                            <select id="experience">
+
+                                <option value="beginner">
+                                    Beginner
+                                </option>
+
+                                <option value="intermediate">
+                                    Intermediate
+                                </option>
+
+                                <option value="advanced">
+                                    Advanced
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="interest">
+                            What do you want to grow?
+                        </label>
+
+                        <input
+                            type="text"
+                            id="interest"
+                            placeholder="Example: vegetables, herbs, flowers"
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="generate-btn"
+                    >
+                        Generate My Garden Plan
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- AI Result -->
+            <div class="result-container">
+
+                <div id="emptyResult" class="empty-result">
+
+                    <div class="empty-icon">
+                        🌿
+                    </div>
+
+                    <h3>Your Garden Plan</h3>
+
+                    <p>
+                        Fill in your garden information
+                        and generate your personalized plan.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="gardenResult"
+                    class="garden-result hidden"
+                >
+
+                    <div class="result-header">
+
+                        <div>
+                            <span class="result-label">
+                                YOUR AI GARDEN PLAN
+                            </span>
+
+                            <h3 id="resultTitle">
+                                Your Garden Plan
+                            </h3>
+                        </div>
+
+                        <div class="ai-badge">
+                            AI
+                        </div>
+
+                    </div>
+
+
+                    <div class="recommendation">
+
+                        <h4>Recommended Plants</h4>
+
+                        <div
+                            id="plantList"
+                            class="plant-list"
+                        ></div>
+
+                    </div>
+
+
+                    <div class="recommendation">
+
+                        <h4>Garden Advice</h4>
+
+                        <p id="gardenAdvice"></p>
+
+                    </div>
+
+
+                    <div class="recommendation">
+
+                        <h4>Today's Outdoor Mission</h4>
+
+                        <div class="mission-preview">
+
+                            <div class="mission-time">
+                                20
+                                <small>MIN</small>
+                            </div>
+
+                            <div>
+                                <strong id="missionText">
+                                    Prepare your garden.
+                                </strong>
+
+                                <p>
+                                    Put the phone away and
+                                    get outside.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="mission-btn"
+                        onclick="scrollToMission()"
+                    >
+                        Start Outdoor Mission
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Outdoor Mission -->
+    <section id="mission" class="mission-section">
+
+        <div class="mission-content">
+
+            <span>TOUCH GRASS</span>
+
+            <h2>
+                Your next screen<br>
+                should be the outdoors.
+            </h2>
+
+            <p>
+                AI has created your plan.
+                Now it is time to leave the screen
+                and work with your plants.
+            </p>
+
+
+            <div class="mission-box">
+
+                <div class="mission-icon">
+                    🌱
+                </div>
+
+                <div>
+
+                    <h3>Today's Garden Mission</h3>
+
+                    <p id="outdoorMission">
+                        Spend 20 minutes outside.
+                        Prepare your garden and
+                        take care of your plants.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="completeMission"
+                class="complete-btn"
+            >
+                Mark Mission Complete
+            </button>
+
+
+            <div
+                id="missionComplete"
+                class="completion-message hidden"
+            >
+                Great job! You touched grass today.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Open AI Section -->
+    <section class="open-ai-section">
+
+        <div class="section-heading">
+
+            <span>OPEN INNOVATION</span>
+
+            <h2>AI that belongs to you</h2>
+
+            <p>
+                AI Garden Buddy is designed around
+                open AI principles.
+            </p>
+
+        </div>
+
+
+        <div class="open-grid">
+
+            <div class="open-card">
+
+                <div class="open-icon">
+                    🔓
+                </div>
+
+                <h3>Open Models</h3>
+
+                <p>
+                    Built around open-weight AI models
+                    rather than depending entirely on
+                    a closed AI API.
+                </p>
+
+            </div>
+
+
+            <div class="open-card">
+
+                <div class="open-icon">
+                    💻
+                </div>
+
+                <h3>Browser First</h3>
+
+                <p>
+                    The project is designed to work
+                    directly in the browser using
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="open-card">
+
+                <div class="open-icon">
+                    🔐
+                </div>
+
+                <h3>Privacy</h3>
+
+                <p>
+                    Garden information can stay on
+                    the user's device instead of being
+                    sent to a traditional AI service.
+                </p>
+
+            </div>
+
+
+            <div class="open-card">
+
+                <div class="open-icon">
+                    🌍
+                </div>
+
+                <h3>Real World Impact</h3>
+
+                <p>
+                    The goal isn't more screen time.
+                    The goal is helping people spend
+                    more time outdoors.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <span>ABOUT THE PROJECT</span>
+
+            <h2>
+                AI should help us experience
+                more of the real world.
+            </h2>
+
+            <p>
+                AI Garden Buddy was created for the
+                Hacktoberfest Open-Source AI Challenge:
+                Week 1 — Touch Grass.
+            </p>
+
+            <p>
+                Instead of using AI to keep people
+                staring at a screen, this project uses
+                AI to create a simple plan and then
+                encourages the user to step outside.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            AI Garden Buddy
+        </div>
+
+        <p>
+            Plan with AI. Grow in the real world.
+        </p>
+
+        <p class="copyright">
+            Built for Hacktoberfest Open-Source AI Challenge 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
